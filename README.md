@@ -1,12 +1,12 @@
-# vt-design
-Check a file for viruses.
+# shortlnk
+Create and store short links for urls, and do the redirect when accessed.
 
 # Cheatsheet
-vtserver$ goimports -l -w -v .    
-vtserver$ go vet -v .  
-vtserver$ golint  
-vtserver$ go doc vtserver  
+ws$ goimports -l -w -v .    
+ws$ go vet -v .  
+ws$ golint  
+ws$ go doc ws  
 
-vtcs$ go fmt ./...  
-vtcs$ go vet ./...  
-vtcs$ go build ./...  
+shortlnk$ go fmt ./...  
+shortlnk$ go vet ./...  
+shortlnk$ go build ./...  

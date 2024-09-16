@@ -1,6 +1,7 @@
 package main
 
 import (
+	"WebServer1/go/src/shortlnk/internal/creator"
 	"bytes"
 	"encoding/json"
 	"fmt"
@@ -19,8 +20,14 @@ func failed(s string, err error) bool {
 
 func main() {
 
-	var url = "http://localhost:8080/upload/api/vtserver_test"
+	var eu creator.ExeUpload
+	var url = "http://localhost:8080/create/api"
 	//var testFile = "/Users/debjo/GitHub/vt-design/go/bin/vtserver_test"
+	var testFile = "./vtserver_test"
+
+	// Input the exe name
+
+	eu.SetExeName(testFile)
 
 	// Convert eu to JSON
 
